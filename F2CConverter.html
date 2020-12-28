@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+	<head>
+		<title> FC Converter </title>
+	</head>
+	<body>
+		<div> 
+			<h2 style="padding-left: 60px;">Temparature Converter</h2>
+			<p></p>
+			<input type="number" id='F' value=32 onblur='F2C2F(id);' />
+			<img src="Conversion.jpg" width="15" height="15" alt="Convesion">
+			<input type="number" id='C' value=0 onblur='F2C2F(id);' />
+		</div>
+		
+		<br/><br/>
+		<label for="FT" style="z-index: 1; left: 60px; top: 102px; position: absolute; height: 132px; width: 494px">Fahrenheit</label>
+		<label for="CT" style="z-index: 1; left: 250px; top: 102px; position: absolute; height: 132px; width: 494px">Celsius</label>	
+	
+		<script>
+			function F2C2F(element)
+			{
+				if (element =='F') {
+					document.getElementById('C').value = ((document.getElementById(element).value-32)*5/9);
+				}
+				else {
+					document.getElementById('F').value = ((document.getElementById(element).value*9/5)+32);
+				}
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+	<head>
+		<title>
+			<script src="myjavascript.js" type="text/javascript">
+				document.write("Hello World!!");
+			</script>
+		</title>
+	</head>
+	<body>
+		<script>
+			//Comments are added like this
+			/* OR like this
+			*/
+			document.write("Hello World Body!!");
+			
+			var x = confirm("Are you nuts?");
+			if (x) {
+				alert("You are nuts");
+				var y = prompt("How big nuts you are", "Doesn't matter");
+				if (y) {
+					alert("You are " + y + " size nuts");
+				}
+				else {
+					alert("You are don't know your size");
+				}
+			}
+			else {
+				alert("You are not nuts");
+			}
+			//window.location = "http://google.com/"
+			function Name(fname, lname)
+			{
+				document.write("My name is " + fname + " " + lname);
+			}
+			Name("Amey", 'Phadke');
+			window.open()
+		</script>
+	</body>
+</html>
